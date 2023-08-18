@@ -17,7 +17,7 @@ function News() {
     console.log(newsData);
 
     return (
-        <div>
+        <div className='newsCards'>
             {newsData.map((data, index) => (
                 <NewsList key={index} headlines={data} />
             ))}
