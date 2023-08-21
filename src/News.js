@@ -14,8 +14,6 @@ function News() {
 
     useEffect(() => getNewsData(), []);
 
-    //console.log(newsData);
-
     return (
         <div className='newsCards'>
             {newsData.map((data, index) => (

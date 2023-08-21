@@ -1,11 +1,11 @@
 import React from 'react';
-import newsimg from './newsimg.jpg';
+import newsImg from './newsimg.jpg';
 
 function NewsList({ headlines }) {
     return (
         <div>
             <div className="card" style={{ width: "33rem" }}>
-                <img src={headlines.urlToImage} className="card-img-top" alt='newsimg' />
+                <img src={headlines.urlToImage ? headlines.urlToImage : newsImg} className="card-img-top" alt='News Thumbnail' />
                 <div className="card-body">
                     <h5 className="card-title">{headlines.title}</h5><br />
                     <p>Author/Source : {headlines.author ? headlines.author : headlines.source.name}</p>
